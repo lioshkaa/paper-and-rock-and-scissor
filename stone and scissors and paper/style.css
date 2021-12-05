@@ -1,0 +1,119 @@
+body {
+  background-color: blueviolet;
+  background-repeat: no-repeat;
+  width: 1300px;
+  height: 600px;
+  background-position: 50%;
+}
+.container {
+  width: 100%;
+  max-width: 1070px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+img {
+  color: white;
+}
+.navigation_list ul {
+  color: white;
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+  list-style: none;
+}
+.navigation_list ul li {
+  font-size: 25px;
+}
+.score {
+  text-align: center;
+}
+.flex_inner_game {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button {
+  font-size: 20px;
+  border: none;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+.rock.disabled {
+  pointer-events: none;
+}
+.papper.disabled {
+  pointer-events: none;
+}
+.scissors.disabled {
+  pointer-events: none;
+}
+.btn-again {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px auto;
+  cursor: pointer;
+}
+.quiz-over-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz-over-modal.active {
+  display: flex;
+}
+.modal.active {
+  display: flex;
+}
+
+.quiz-over-modal .content {
+  background-color: darkcyan;
+  padding: 30px;
+  border-radius: 10px;
+  flex-basis: 700px;
+  max-width: 700px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.quiz-over-modal .content h1 {
+  font-size: 36px;
+  margin: 0 0 20px;
+}
+
+.quiz-over-modal .content button {
+  padding: 15px 50px;
+  border: none;
+  background-color: #ff9800;
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ffffff;
+}

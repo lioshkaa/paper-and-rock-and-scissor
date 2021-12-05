@@ -1,0 +1,62 @@
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatiable" content="ie=edge" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navigation_list">
+          <ul>
+            <li>
+              player
+              <p class="score-Player">0</p>
+            </li>
+            <li>
+              machine
+              <p class="score-Machine">0</p>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="quiz-over-modal">
+        <div class="content">
+          <h1>Вы победили</h1>
+          <button id="btn-try-again">Закрыть</button>
+        </div>
+      </div>
+      <div class="quiz-over-modal modal">
+        <div class="content">
+          <h1>Компьютер победил</h1>
+
+          <button id="btn-tr-again">Закрыть</button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="flex_inner_game">
+          <div class="inner_item_game">
+            <img src="img/Rock.png" class="color" width="300" />
+          </div>
+
+          <div class="inner_item_game">
+            <button class="rock">stone</button>
+            <button class="papper">paper</button>
+            <button class="scissors">scissors</button>
+          </div>
+          <div class="inner_item_game">
+            <img class="color_two" width="300" />
+          </div>
+        </div>
+      </div>
+      <button class="btn-again">Заново</button>
+      <p class="out"></p>
+    </main>
+    <footer class="footer"></footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
